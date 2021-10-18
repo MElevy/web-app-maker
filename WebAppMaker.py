@@ -100,9 +100,7 @@ def mainloop(FOLDER):
 			win.hide()
 			pythonEditor(FOLDER)
 			win.UnHide()
-		elif event=='Run The Web App' 
-				and sg.popup_yes_no(
-					'This will freeze the app', 'are you sure you want to continue?')=='Yes:
+		elif event=='Run The Web App' and sg.popup_yes_no('This will freeze the app', 'are you sure you want to continue?')=='Yes':
 			system('python %s' % path(FOLDER, 'app.py'))
 	win.close()
 
